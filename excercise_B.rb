@@ -10,26 +10,34 @@
 # Create a method that takes in whether the team has won or lost and updates the points property for a win.
 
 class Team
+  attr_reader(
+    :team_name,
+    :players,
+    :coach
+  )
+
+  attr_writer(:coach)
+  
   def initialize(team_name, players, coach)
     @team_name = team_name
     @players = players
     @coach = coach
   end
 
-  def get_team_name
-    return @team_name
-  end
-
-  def get_team_players
-    return @players
-  end
-
-  def get_team_coach
-    return @coach
-  end
-
-  def set_team_coach(new_coach)
-    @coach = new_coach
-  end
+  # def get_team_name
+  #   return @team_name
+  # end
+  #
+  # def get_team_players
+  #   return @players
+  # end
+  #
+  # def get_team_coach
+  #   return @coach
+  # end
+  #
+  # def set_team_coach(new_coach)
+  #   @coach = new_coach
+  # end
 
 end
