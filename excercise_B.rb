@@ -27,4 +27,8 @@ class Team
   def add_player(player_name)
     @players.push(player_name)
   end
+
+  def is_player(player_name)
+    @players.include?(player_name)
+  end
 end
