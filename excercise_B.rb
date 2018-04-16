@@ -13,7 +13,8 @@ class Team
   attr_reader(
     :team_name,
     :players,
-    :coach
+    :coach,
+    :points
   )
 
   attr_accessor(:coach)
@@ -22,6 +23,7 @@ class Team
     @team_name = team_name
     @players = players
     @coach = coach
+    @points = 0
   end
 
   def add_player(player_name)
