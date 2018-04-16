@@ -33,4 +33,12 @@ class Team
   def is_player(player_name)
     @players.include?(player_name)
   end
+
+  def game_won(won)
+    if won
+      @points += 1      
+    else
+      p "#{@team_name} lost again? Sack #{coach} now!"
+    end
+  end
 end
