@@ -28,4 +28,8 @@ class Team
     return @coach
   end
 
+  def set_team_coach(new_coach)
+    @coach = new_coach
+  end
+
 end

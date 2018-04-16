@@ -21,4 +21,11 @@ class SportTeamTest < MiniTest::Test
     assert_equal("Sandy", team_coach)
   end
 
+  def test_set_team_coach
+    team1 = Team.new("Hearts", ["luis", "colin"], "Sandy")
+    team1.set_team_coach('John')
+    team_coach = team1.get_team_coach()
+    assert_equal("John", team_coach)
+  end
+
 end
