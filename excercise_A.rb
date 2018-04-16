@@ -32,4 +32,8 @@ class Student
   def talk
     'I can talk!'
   end
+
+  def say_favourite_language(language)
+    "I love #{language}"
+  end
 end
