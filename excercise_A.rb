@@ -28,4 +28,8 @@ class Student
   def set_cohort(new_cohort)
     @cohort = new_cohort
   end
+
+  def talk
+    'I can talk!'
+  end
 end
